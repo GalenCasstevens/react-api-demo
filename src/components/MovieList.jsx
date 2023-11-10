@@ -21,6 +21,23 @@ function MovieList() {
 	// 		.catch((error) => console.error(error));
 	// }, []);
 
+	/* with XMLHttpRequest */
+	// useEffect(() => {
+	// 	const xhr = new XMLHttpRequest();
+	// 	xhr.open(
+	// 		'GET',
+	// 		'https://imdb8.p.rapidapi.com/title/get-most-popular-movies?homeCountry=US&purchaseCountry=US&currentCountry=US'
+	// 	);
+	// 	xhr.setRequestHeader('X-RapidAPI-Key', process.env.REACT_APP_API_KEY);
+	// 	xhr.setRequestHeader('X-RapidAPI-Host', 'imdb8.p.rapidapi.com');
+	// 	xhr.onload = function () {
+	// 		if (xhr.status === 200) {
+	// 			setData(JSON.parse(xhr.responseText));
+	// 		}
+	// 	};
+	// 	xhr.send();
+	// });
+
 	/* with Axios */
 	useEffect(() => {
 		const url =
